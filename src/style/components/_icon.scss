@@ -1,0 +1,9 @@
+@use 'colors';
+
+.icon{
+    fill: colors.theme-color('background','dark');
+    margin-left: 0.5em;
+    &.--is-dark{
+        fill: colors.theme-color('foreground','base');
+    }
+}
