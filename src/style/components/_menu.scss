@@ -1,0 +1,70 @@
+@use 'colors';
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 9em;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.3s ease-in-out;
+	transition-duration: 0.3s;
+    z-index: 11;
+    box-shadow: 5px 11px 5px -11px rgba(0,0,0,0.54);
+    &.--is-active{
+        visibility: visible;
+		opacity: 1;
+        opacity: 100%;
+    }
+    &__dimmer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: colors.theme-color('background','dark',0.6);
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s ease-in-out;
+        transition-duration: 0.3s;
+        
+        &.--is-active{
+            visibility: visible;
+            opacity: 1;
+            opacity: 100%;
+        }
+    }
+    &__ancestor{
+        position: relative;
+    }
+    &__icon{
+        position: absolute;
+        top: 0.55em;
+        left: 1.0em;
+    }
+    &__item{
+        color: colors.theme-color('primary','dark');
+        position: absolute;
+        cursor: pointer;
+        &:hover{
+            color: colors.theme-color('primary','dark',0.6);
+            
+        }
+        &.--on-top{
+            top: 0.55em;
+            left: 5em;
+        }
+        &.--in-middle{
+            top: 3.5em;
+            left: 4em;
+        }
+        &.--on-bottom{
+            top: 6em;
+            left: 1.55em;
+        }
+
+    }
+}

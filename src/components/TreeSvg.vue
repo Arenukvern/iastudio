@@ -3,7 +3,7 @@
 		width="26"
 		height="30"
 		viewBox="0 0 26 30"
-		class="icon"
+		class="icon tree-svg"
 		:class="darkClass"
 		xmlns="http://www.w3.org/2000/svg"
 	>

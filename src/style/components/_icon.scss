@@ -2,8 +2,14 @@
 
 .icon{
     fill: colors.theme-color('background','dark');
-    margin-left: 0.5em;
+    transition: ease-in-out 0.2s;
     &.--is-dark{
         fill: colors.theme-color('foreground','base');
+        &:hover{
+            fill: colors.theme-color('background','base',0.8);
+        }
+    }
+    &:hover{
+        fill: colors.theme-color('background','dark',0.8);
     }
 }

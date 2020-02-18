@@ -1,0 +1,29 @@
+@use 'colors';
+
+.bottom{
+    background-color: #ECF0F1;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    font-size: 1.4em;
+    &__item{
+        margin: 0.1em;
+        padding: 0.1em;
+        display: flex;
+        align-items: center;
+        transition: ease-in-out 0.2s;
+        cursor: pointer;
+        &.--is-text{
+            &:hover{
+                color: colors.theme-color('primary','base',0.7);
+            }
+        }
+        &.--is-icon{
+            &:hover{
+                border-radius: 5px;
+                background-color: colors.theme-color('background','dark',0.1);
+            }
+        }
+    }
+}

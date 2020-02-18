@@ -1,6 +1,7 @@
 <template>
   <div class="header">
-    <TreeSvg/>
+    <Menu />
+    
     <div class="header__title">
       {{title}}
     </div>
@@ -11,8 +12,8 @@
 </template>
 
 <script>
+import Menu from "@/components/Menu.vue";
 import LangSvg from "@/assets/lang.svg";
-import TreeSvg from "@/components/TreeSvg.vue";
 export default {
   name: "Header",
   props: {
@@ -20,7 +21,7 @@ export default {
   },
   components: {
     LangSvg,
-    TreeSvg
+    Menu
   }
 };
 </script>
