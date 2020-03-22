@@ -1,20 +1,20 @@
 <template>
-  <div class="page">
-    <Header :title="'About'"/>
+    <div class="page">
+        <Header :title="'About'" />
 
-    <Bottom/>
-  </div>
+        <Bottom />
+    </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Bottom from "@/components/Bottom.vue";
-import Header from "@/components/Header.vue";
+import Bottom from '@/components/Bottom.vue'
+import Header from '@/components/Header.vue'
 export default {
-  name: "About",
-  components: {
-    Bottom,
-    Header
-  }
-};
+    name: 'About',
+    components: {
+        Bottom,
+        Header,
+    },
+}
 </script>

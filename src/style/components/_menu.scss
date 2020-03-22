@@ -51,7 +51,6 @@
         cursor: pointer;
         &:hover{
             color: colors.theme-color('primary','dark',0.6);
-            
         }
         &.--on-top{
             top: 0.55em;
@@ -60,6 +59,10 @@
         &.--in-middle{
             top: 3.5em;
             left: 4em;
+        }
+        &.--in-middle-left{
+            top: 3.5em;
+            left: 1em;
         }
         &.--on-bottom{
             top: 6em;
